@@ -1,0 +1,6 @@
+@import "~bootstrap";
+
+.body-links {
+    color: blue;
+    text-decoration: none;
+}

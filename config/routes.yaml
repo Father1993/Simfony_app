@@ -1,5 +1,19 @@
-controllers:
-    resource:
-        path: ../src/Controller/
-        namespace: App\Controller
-    type: attribute
+# controllers:
+#     resource:
+#         path: ../src/Controller/
+#         namespace: App\Controller
+#     type: attribute
+
+
+app_homepage:
+    path: /
+    controller: App\Controller\ArticleController::homepage
+
+app_show:
+    path: /articles/{slug}
+    controller: App\Controller\ArticleController::show
+
+app_like:
+    methods: POST
+    path: /articles/{id}/like/{type}
+    controller: App\Controller\ArticleLikeController::like
